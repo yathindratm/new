@@ -1,0 +1,42 @@
+
+1.
+git init
+ git add hello_world.py
+ git commit -m "Initial commit with hello world python script"
+ echo "venv/" >> .gitignore
+ echo "*.pyc" >> .gitignore
+ echo "data/*.csv" >> .gitignore
+ git add .gitignore
+ git commit -m "Add .gitignore"
+ git push [remote repo URL]
+
+2.
+   git init
+ dvc init
+dvc add iris_data.csv
+ git add iris_data.csv.dvc .gitignore .dvc/
+ git commit -m "Track dataset with DVC"
+ git push origin main
+
+3.
+  git add train_model.py
+  git commit -m "Add model training script.
+
+4
+  pip install flask
+pip install scikit-learn
+  
+
+5
+
+    docker build -t iris-api .
+  docker run -p 5000:5000 iris-api
+  
+  6.
+  streamlit run  app.py
+
+  8
+  locust -f p8.py --host=http://localhost:5000
+
+  
+  
